@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <style>
+            body,
+            html {
+                height: 100%
+            }
+
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Amatic SC", sans-serif
+            }
+
+            .menu {
+                display: none
+            }
+
+            .bgimg {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("https://media.istockphoto.com/id/1067302478/photo/traditional-tajine-dishes-couscous-and-fresh-salad-on-rustic-wooden-table-tagine-lamb-meat.jpg?s=612x612&w=0&k=20&c=2G8Q9JrTgnA8WpaR0jxiPDHXzU2uZYgzbIuEFt-k4hs=");
+                min-height: 90%;
+            }
+        </style>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="#" class="w3-bar-item w3-button">HOME</a>
+            <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+            <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-padding">
+            <span class="w3-tag w3-xlarge">Open from 2pm to 12am</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white w3-hide-small" style="font-size:100px">Michael's<br>African Cuisine</span>
+            <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Michaels<br>African Cuisine
+        </div>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Entree</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Appetizers</div>
+                </a>
+            </div>
+
+            <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Piri piri chicken, Mozambique</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.70</span></h1>
+                <p class="w3-text-grey">It's generally known simply as grilled chicken piri piri and is traditionally served with matapa, a dish of cassava leaves cooked in a peanut sauce</p>
+                <hr>
+
+                <h1><b>Jollof rice and egusi soup, Nigeria</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+                <p class="w3-text-grey">A simple, spicy one-pot dish comprising, at its most basic, rice, tomatoes, onions and pepper, it's often served at parties and other festive gatherings, along with other Nigerian favorites such as egusi soup (made with ground melon seeds and bitter leaf), fried plantains and pounded yam (iyan or fufu).</p>
+                <hr>
+
+                <h1><b> Bunny chow, South Africa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.00</span></h1>
+                <p class="w3-text-grey">This hollowed-out half- or quarter-loaf of white bread filled with a blistering-hot curry is one of South Africa's most treasured street foods</p>
+                <hr>
+
+                <h1><b>Kapenta with sadza, Zimbabwe</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+                <p class="w3-text-grey">Kapenta is available both dried and fresh, and is also stewed with tomatoes, onions and groundnut powder, and served with fresh greens.</p>
+                <hr>
+
+                <h1><b>Muamba de Galinha, Angola</b> <span class="w3-tag w3-red w3-round"></span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">$10.00</span></h1>
+                <p class="w3-text-grey">Also known as chicken muamba, this is a spicy, somewhat oily stew made with with palm oil or palm butter, garlic, chilis and okra. Variations of chicken muamba</p>
+                <hr>
+            </div>
+
+            <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Lasary voatabia</b> <span class="w3-tag w3-grey w3-round"></span> <span
+                        class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+                <p class="w3-text-grey">A traditional tomato and onion salad made with a combination of seeded and chopped tomatoes, thinly sliced green onions, lime juice, salt, grated ginger, hot sauce such as Tabasco, and black pepper</p>
+                <hr>
+
+                <h1><b>Salade de palmiste</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+                <p class="w3-text-grey">Ingredients in the salad include green mangos, coconuts, avocados, green tomatoes, red bell peppers, coriander, and mint.</p>
+                <hr>
+
+                <h1><b>Salata mashwiya</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.00</span></h1>
+                <p class="w3-text-grey"> It consists of tomatoes, bell peppers, onions, eggplants, hot chiles, and garlic</p>
+                <hr>
+            </div>
+
+
+            <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Labneh</b> <span class="w3-tag w3-grey w3-round"></span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">$4.50</span></h1>
+                <p class="w3-text-grey">Creamy texture and mild flavor are the main attributes of labneh; a traditional Middle Eastern strained yogurt that is prepared with yogurt and salt</p>
+                <hr>
+
+                <h1><b>Eggah</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.20</span></h1>
+                <p class="w3-text-grey">Eggah is the thick and heavy Egyptian version of an omelet</p>
+                <hr>
+
+                <h1><b>Briouat</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+                <p class="w3-text-grey">Briouats are small and crispy Moroccan pastries that can be stuffed with a variety of ingredients such as chicken, lamb, cheese, or lemon</p>
+                <hr>
+
+                <h1><b>Maakouda </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+                <p class="w3-text-grey">The fritters are usually prepared plain, but they can also be stuffed with meat, tuna, or cheese, although not that often</p>
+            </div><br>
+
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+            <p>The resturant was founded by Michael in December of 2003. Michael had come to the US from Africa but to his suprise there weren't any African Restaurants. So Michael decided to open up one of the first African restaurants here in South Florida.
+    
+            <h1><b>Opening Hours</b></h1>
+
+            <div class="w3-row">
+                <div class="w3-col s6">
+                    <p>Monday -Thursday 2:00pm- 12am</p>
+                    <p>Sunday Closed</p>
+                </div>
+                <div class="w3-col s6">
+                    <p>Friday 12:00 pm - 2:00 am</p>
+                    <p>Saturday 12pm:00 - 2:00 am</p>
+                    <p>Sunday Closed</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Contact -->
+    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+            <p>Find us at 352 Nw 83 St, Fort Lauderdale,Fl or call us at 954-989-0987</p>
+            <p><span class="w3-tag"></span> We offer full-service catering for any event, large or small. We
+                understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look
+                and taste.</p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name">
+                </p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required
+                        name="People"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                        required name="date""></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                        placeholder="Message \ Special requirements" required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
